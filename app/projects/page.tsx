@@ -3,7 +3,9 @@ import React from 'react'
 
 const Page = () => {
   return (
-    <div><UnderDevelopment /></div>
+    <div>
+      <UnderDevelopment />
+    </div>
   )
 }
 

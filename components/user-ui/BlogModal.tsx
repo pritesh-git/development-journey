@@ -34,7 +34,6 @@ export const BlogModal: React.FC<BlogModalProps> = ({
 }) => {
   if (!content) return null
 
-
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
       <DialogContent className="max-w-3xl h-[90vh] p-0">

@@ -114,12 +114,12 @@ strong {
 em {
   @apply italic;
 }
-ul{
-  @apply list-disc [&>li]:mt-2 ml-4
+ul {
+  @apply list-disc [&>li]:mt-2 ml-4;
 }
 
-ol{
-  @apply list-decimal [&>li]:mt-2 ml-4
+ol {
+  @apply list-decimal [&>li]:mt-2 ml-4;
 }
 
 li {
@@ -204,4 +204,3 @@ hr {
 .muted {
   @apply text-sm text-muted-foreground;
 }
-

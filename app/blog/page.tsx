@@ -39,7 +39,9 @@ const Page = () => {
     <div className="w-5/6 mx-auto p-10">
       <div className="max-w-7xl flex flex-col mx-auto shadow-lg gap-3">
         <h1 className="text-center mx-auto">{mainContent.title}</h1>
-        <p className="text-center mx-auto max-w-6xl">{mainContent.description}</p>
+        <p className="text-center mx-auto max-w-6xl">
+          {mainContent.description}
+        </p>
       </div>
       <span className="relative flex justify-center my-20">
         <div className="absolute inset-x-0 top-1/2 h-px -translate-y-1/2 bg-transparent bg-gradient-to-r from-transparent via-gray-500 to-transparent opacity-75" />

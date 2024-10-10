@@ -23,7 +23,6 @@ const page = () => {
           </p>
         </div>
 
-
         {/* Current Focus */}
         <div className="text-center space-y-4 w-full">
           <h3 className="text-lg font-semibold">Current Focus</h3>

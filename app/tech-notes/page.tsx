@@ -129,7 +129,8 @@ const NotebookPage: NextPage = () => {
 
   if (!selectedNotebook) {
     return (
-      <div className={`w-5/6 flex flex-wrap justify-center gap-x-8 gap-y-14  mx-auto py-10`}>
+      <div
+        className={`w-5/6 flex flex-wrap justify-center gap-x-8 gap-y-14  mx-auto py-10`}>
         {NotebooksData.map((notebook, key) => (
           <TechItem
             key={key}
