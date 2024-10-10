@@ -205,8 +205,8 @@ I believe in learning together! Feel free to:
 - Point out areas that need more clarity
 - Discuss alternative approaches to problems
 
-Email: [your@email.com](mailto:pritesh.bhati59@gmail.com)  
-LinkedIn: [Your Name](https://linkedin.com/in/pritesh-singh-bhati)
+Email: [EMAIL](mailto:pritesh.bhati59@gmail.com)  
+LinkedIn: [LINKEDIN](https://linkedin.com/in/pritesh-singh-bhati)
 
 ---
 
