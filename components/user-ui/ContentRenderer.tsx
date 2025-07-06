@@ -22,7 +22,7 @@ const MarkdownComponents: Components = {
   li: ({ children }) => <li>{children}</li>,
   blockquote: ({ children }) => <blockquote>{children}</blockquote>,
   img: ({ src, alt }) => (
-    <Image src={src || ''} alt={alt || ''} className="rounded-lg border" />
+    <Image src={src ?? ''} alt={alt ?? ''} className="rounded-lg border" />
   ),
   a: ({ href, children }) => (
     <a href={href} rel="noopener noreferrer">

@@ -7,12 +7,12 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu'
+import { navLinks } from '@/shared/navbar'
 import { CodeXml, Menu, Search } from 'lucide-react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { FC } from 'react'
 import { ModeToggle } from './modeToggle'
-import { navLinks } from '@/shared/navbar'
 
 const NavHeader: FC = () => {
   const pathname = usePathname()
@@ -42,7 +42,7 @@ const NavHeader: FC = () => {
       </div>
 
       <div className="flex items-center gap-4">
-        <Search className="w-5 h-5 cursor-pointer" />
+        <Search className="w-5 h-5 cursor-not-allowed" />
         <ModeToggle />
 
         <DropdownMenu>

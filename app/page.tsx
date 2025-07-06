@@ -1,11 +1,11 @@
 'use client'
 
 import { Button } from '@/components/ui/button'
+import RedirectionCard from '@/components/user-ui/RedirectionCards'
 import { homePageContent } from '@/shared/homePage'
 import { SquareLibrary } from 'lucide-react'
 import { NextPage } from 'next'
 import Image from 'next/image'
-import RedirectionCard from '@/components/user-ui/RedirectionCards'
 import { useRef } from 'react'
 
 const Home: NextPage = () => {
@@ -37,18 +37,59 @@ const Home: NextPage = () => {
             />
           </div>
 
-          <h1 className="text-center mt-4">{mainHeading}</h1>
-
-          <p className="text-center mt-2">{mainSubheading}</p>
+            <h1 className="text-4xl font-extrabold mb-4 text-center drop-shadow-md shadow-gray-300 bg-gradient-to-r from-gray-900 via-gray-700 to-gray-900 text-transparent bg-clip-text dark:from-gray-100 dark:via-gray-300 dark:to-gray-100">
+            {mainHeading}
+            </h1>
+            <p className="text-lg text-center mb-8 drop-shadow-sm shadow-gray-200 text-gray-700 bg-white/80 px-4 py-2 rounded-md dark:text-gray-200 dark:bg-transparent">
+            {mainSubheading}
+            </p>
 
           <div className="mt-8 mx-auto">
             <Button
               size="lg"
               variant="default"
-              className="bg-primary-foreground text-primary hover:bg-secondary hover:font-semibold mx-auto"
-              onClick={scrollToCards} // Add the click handler here
+              className={`
+                group
+                mx-auto
+                px-8
+                py-3
+                rounded-xl
+                font-bold
+                transition-all
+                duration-300
+                bg-gradient-to-r
+                from-gray-300 via-gray-400 to-gray-500
+                text-gray-900
+                border
+                border-gray-200
+                shadow-lg
+                hover:scale-105
+                hover:shadow-2xl
+                hover:border-gray-100
+                hover:bg-gradient-to-l
+                focus:outline-none
+                focus:ring-2
+                focus:ring-gray-300
+                focus:ring-offset-2
+                dark:from-gray-700 dark:via-gray-800 dark:to-gray-900
+                dark:text-gray-100
+                dark:border-gray-500
+                dark:hover:border-gray-300
+              `}
+              onClick={scrollToCards}
             >
-              {ctaButtonText}
+              <span
+                className="
+                  relative z-10
+                  transition-all duration-300
+                  group-hover:tracking-wider
+                  group-hover:text-gray-700
+                  dark:group-hover:text-white
+                  group-hover:drop-shadow-[0_2px_8px_rgba(0,0,0,0.15)]
+                "
+              >
+                {ctaButtonText}
+              </span>
             </Button>
           </div>
 
@@ -62,7 +103,7 @@ const Home: NextPage = () => {
           {/* Grid of Section Cards */}
           <div
             ref={cardSectionRef} // Attach the ref to the card section
-            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 my-8 text-center">
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 my-8 text-center">
             {cardData.map((card, index) => (
               <RedirectionCard
                 key={index}
